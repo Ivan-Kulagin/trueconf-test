@@ -1,0 +1,8 @@
+# Ignore IDEA config files
+.idea/
+
+# Ignore node dependencies
+node_modules/
+
+# Ignore build directory.
+dist/
