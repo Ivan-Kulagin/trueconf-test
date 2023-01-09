@@ -1,25 +1,25 @@
 <template>
-  <div>
-    <h1>
-      Hello World {{ counter }}
-    </h1>
-    <button @click="increaseCounter">Increase</button>
-  </div>
+  <Schema
+    :floors="floors"
+    :shafts="shafts"
+  />
 </template>
 
 <script>
+import Schema from "./components/Schema";
+
 export default {
   name: "App",
+  components: {
+    Schema
+  },
+
   data() {
     return {
-      counter: 0
+      floors: 5,
+      shafts: 1
     }
   },
-  methods: {
-    increaseCounter() {
-      this.counter++
-    }
-  }
 }
 </script>
 
